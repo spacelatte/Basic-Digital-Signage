@@ -95,15 +95,10 @@ public class ShakeDetector implements SensorEventListener {
 	
 	@Override
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
+		return;
 	}
 	
-	/**
-	 * Listens for shakes.
-	 */
 	public interface Listener {
-		/**
-		 * Called on the main thread when the device is shaken.
-		 */
 		void hearShake();
 	}
 }
