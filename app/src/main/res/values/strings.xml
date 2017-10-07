@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">FuckingDoor</string>
+	<string name="main" translatable="true">close door</string>
+</resources>
