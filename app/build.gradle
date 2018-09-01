@@ -3,19 +3,16 @@ apply plugin: 'com.android.application'
 //'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/releases/download/1.2/sdktools.gradle'
 
 android {
-	compileSdkVersion 26
-	buildToolsVersion "26.0.2"
+	compileSdkVersion 28
 	defaultConfig {
 		applicationId "me.n0pe.fuckingdoor"
 		minSdkVersion 23
-		targetSdkVersion 26
-		versionCode 1
-		versionName "1.0"
-		testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+		targetSdkVersion 28
+		versionCode 0
 	}
 	buildTypes {
 		release {
-			minifyEnabled false
+			minifyEnabled true
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
@@ -23,9 +20,5 @@ android {
 
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
-	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-		exclude group: 'com.android.support', module: 'support-annotations'
-	})
-	compile 'com.android.support:appcompat-v7:26.+'
-	testCompile 'junit:junit:4.12'
+	compile 'com.android.support:appcompat-v7:28.+'
 }
